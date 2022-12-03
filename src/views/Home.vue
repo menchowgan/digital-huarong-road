@@ -6,7 +6,6 @@ import {numbersStore} from "../store"
 const numberStore = numbersStore()
 
 const numbers = ref<Array<string>>(numberStore.shuffle(numberStore.currentNumbers))
-console.log("numbers", numbers);
 
 </script>
 

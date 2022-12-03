@@ -13,7 +13,6 @@ const props = defineProps({
 })
 
 const swapSite = (index: number) => {
-  console.log("index", index);
   if (props.numbers[index] === "") {
     GMessage("请点击数字", {
       type: "warn"
