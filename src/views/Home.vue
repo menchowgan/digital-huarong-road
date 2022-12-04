@@ -46,10 +46,11 @@ const shuffle = () => {
   position: absolute;
   top: 2%;
   right: 3vw;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: #ffcf86;
   @media screen and (max-width: 1500px) {
     right: 2vw;
+    font-size: 0.5rem;
   }
   @media screen and (max-width: 600px) {
     top: 10vh;
