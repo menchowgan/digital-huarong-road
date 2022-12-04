@@ -9,7 +9,9 @@ let timer: number | null = null
 
 export default (message: string | VNode, options: any) => {
   const vnode = createVNode(GMessage, {message, ...options})
-  
+  if (div.innerHTML) {
+    render(null, div)
+  }
   render(vnode, div)
 
   timer && clearTimeout(timer)
