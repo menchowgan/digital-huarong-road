@@ -12,6 +12,8 @@ export default defineStore("numbers-store", () => {
     "13", "14", "15", ""
   ])
 
+  const steps = ref<number>(0)
+
   const setMoveMap = () => {
     const idx = numbers.value.findIndex(num => num === "")
     let idxs: number[] = []
@@ -50,10 +52,16 @@ export default defineStore("numbers-store", () => {
     }
     numbers.value = _arr
     setMoveMap()
+    steps.value = 0
     return _arr
   }
 
+  const addStep = () => {
+    steps.value++
+  }
+
   const currentNumbers = computed(() => numbers.value)
+  const currentSteps = computed(() => steps.value)
   
   const swap2AdjNumber = (i: number) => {
     const index = numbers.value.findIndex(num => num === "")
@@ -61,6 +69,7 @@ export default defineStore("numbers-store", () => {
     if (idxs.includes(i)) {
       [numbers.value[i], numbers.value[index]] = [numbers.value[index], numbers.value[i]]
       setMoveMap()
+      addStep()
       return
     }
     GMessage("不能移动这个数字哦～～～！", {
@@ -71,6 +80,7 @@ export default defineStore("numbers-store", () => {
   return {
     shuffle,
     currentNumbers,
-    swap2AdjNumber
+    swap2AdjNumber,
+    currentSteps
   }
 })

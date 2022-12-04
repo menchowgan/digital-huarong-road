@@ -8,13 +8,28 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Number move sort</title>
   <style>
+    body {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background-image: url("./src/assets/images/background.webp");
+      background-size:cover;
+      background-attachment: fixed;
+    }
     #app {
+      height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
     html {
       font-size: 100px;
+    }
+    @media screen and (max-width: 1500px) {
+      html {
+        font-size: 80px;
+      }
     }
   </style>
 </head>
