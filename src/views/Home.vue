@@ -51,6 +51,9 @@ const shuffle = () => {
   @media screen and (max-width: 1500px) {
     right: 2vw;
   }
+  @media screen and (max-width: 600px) {
+    top: 10vh;
+  }
 }
 .buttosn {
   width: 20%;
@@ -63,7 +66,12 @@ const shuffle = () => {
   font-size: 0.8rem;
   margin-top: 3vh;
   @media screen and (max-width: 1500px) {
+    width: 45%;
     height: 8vh;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    height: 5vh;
     text-align: center;
   }
 

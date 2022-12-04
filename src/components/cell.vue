@@ -24,6 +24,7 @@ const props = defineProps({
     width: 86%;
     height: 86%;
     font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: #ffcf86;
     border-radius: 40px;
