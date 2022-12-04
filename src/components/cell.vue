@@ -21,11 +21,12 @@ const props = defineProps({
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #ffdcae;
+  background-color: #999;
   font-size: 1.6rem;
-  color: #ffffff;
+  color: #ffcf86;
   font-weight: bold;
   border-radius: 40px;
   margin-right: 1px;
+  border: 1px solid #ffcf86;
 }
 </style>
